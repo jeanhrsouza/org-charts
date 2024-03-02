@@ -1,0 +1,81 @@
+{
+    "projectX": {
+        "nome": "Projetão top",
+        "descricao": "Projetão que tem objetivo de testar o orgchart",
+        "empresa": {
+            "nome": "Abóbora's company"
+        },
+        "orgChart": [
+            {
+                "id": 1,
+                "parentId": "",
+                "pessoa": {
+                    "nome_guerra": "Fulano",
+                    "email": "Fulaneira@br.com"
+                },
+                "perfil_funcionario": {
+                    "codigo_perfil": "DSV1",
+                    "metodologia": {
+                        "codigo": "Agile",
+                        "descricao": "Metodologia... agil"
+                    },
+                    "descricao": "Profissinal responsável pelo desenvolvimento de código e liderança da equipe",
+                    "nome_perfil": "Desenvolvedor senior",
+                    "area": "Area label",
+                    "office": "Brasil",
+                    "positionName": "Chief"
+                },
+                "qtd_hrs_semana": 40,
+                "tags": "tag1, tag2, ceo",
+                "imageUrl": "https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/D3/Organization%20Chart/cto.jpg"
+            },
+            {
+                "id": 2,
+                "parentId": 1,
+                "name": "node2",
+                "pessoa": {
+                    "nome_guerra": "Fulano",
+                    "email": "Fulaneira@br.com"
+                },
+                "perfil_funcionario": {
+                    "codigo_perfil": "DSV1",
+                    "metodologia": {
+                        "codigo": "Agile",
+                        "descricao": "Metodologia... agil"
+                    },
+                    "descricao": "Profissinal responsável pelo desenvolvimento de código e liderança da equipe",
+                    "nome_perfil": "Desenvolvedor senior",
+                    "area": "Area label",
+                    "office": "Brasil",
+                    "positionName": "Chief"
+                },
+                "qtd_hrs_semana": 40,
+                "tags": "tag1, tag2, ceo",
+                "imageUrl": "https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/D3/Organization%20Chart/cto.jpg"
+            },
+            {
+                "id": 3,
+                "parentId": 1,
+                "pessoa": {
+                    "nome_guerra": "Fulano",
+                    "email": "Fulaneira@br.com"
+                },
+                "perfil_funcionario": {
+                    "codigo_perfil": "DSV1",
+                    "metodologia": {
+                        "codigo": "Agile",
+                        "descricao": "Metodologia... agil"
+                    },
+                    "descricao": "Profissinal responsável pelo desenvolvimento de código e liderança da equipe",
+                    "nome_perfil": "Desenvolvedor senior",
+                    "area": "Area label",
+                    "office": "Brasil",
+                    "positionName": "Chief"
+                },
+                "qtd_hrs_semana": 40,
+                "tags": "tag1, tag2, ceo",
+                "imageUrl": "https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/D3/Organization%20Chart/cto.jpg"
+            }
+        ]
+    }
+}
