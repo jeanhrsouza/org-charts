@@ -10,7 +10,7 @@
                 "id": 1,
                 "parentId": "",
                 "pessoa": {
-                    "nome_guerra": "Fulano",
+                    "nome_guerra": "Smeagol",
                     "email": "Fulaneira@br.com"
                 },
                 "perfil_funcionario": {
@@ -21,20 +21,20 @@
                     },
                     "descricao": "Profissinal responsável pelo desenvolvimento de código e liderança da equipe",
                     "nome_perfil": "Desenvolvedor senior",
-                    "area": "Area label",
+                    "area": "Tecnologia",
                     "office": "Brasil",
                     "positionName": "Chief"
                 },
                 "qtd_hrs_semana": 40,
                 "tags": "tag1, tag2, ceo",
-                "imageUrl": "https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/D3/Organization%20Chart/cto.jpg"
+                "imageUrl": "https://thumbor.guiame.com.br/unsafe/smart/media.guiame.com.br/archives/2014/07/31/26078630-.jpg"
             },
             {
                 "id": 2,
                 "parentId": 1,
                 "name": "node2",
                 "pessoa": {
-                    "nome_guerra": "Fulano",
+                    "nome_guerra": "Frodo",
                     "email": "Fulaneira@br.com"
                 },
                 "perfil_funcionario": {
@@ -51,13 +51,13 @@
                 },
                 "qtd_hrs_semana": 40,
                 "tags": "tag1, tag2, ceo",
-                "imageUrl": "https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/D3/Organization%20Chart/cto.jpg"
+                "imageUrl": "https://mundoterramedia.files.wordpress.com/2018/06/bilbo.jpg?w=640"
             },
             {
                 "id": 3,
                 "parentId": 1,
                 "pessoa": {
-                    "nome_guerra": "Fulano",
+                    "nome_guerra": "Legolas",
                     "email": "Fulaneira@br.com"
                 },
                 "perfil_funcionario": {
@@ -74,7 +74,7 @@
                 },
                 "qtd_hrs_semana": 40,
                 "tags": "tag1, tag2, ceo",
-                "imageUrl": "https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/D3/Organization%20Chart/cto.jpg"
+                "imageUrl": "https://pm1.aminoapps.com/6843/f0365d09659df3fda232db54a627a6ec18d09c52v2_hq.jpg"
             }
         ]
     }

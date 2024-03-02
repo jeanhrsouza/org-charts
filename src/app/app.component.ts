@@ -16,11 +16,6 @@ export class AppComponent {
   constructor() {}
 
   ngOnInit() {
-    // d3.csv(
-    //   'https://raw.githubusercontent.com/bumbeishvili/sample-data/main/org.csv'
-    // ).then((data: any) => {
-    //   this.data = data;
-    // });
     let project = 'projectX';
     d3.json(`http://localhost:3000/${project}`).then((data: any) => {
       this.data = data.orgChart;
