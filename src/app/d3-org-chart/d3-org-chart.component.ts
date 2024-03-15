@@ -42,7 +42,7 @@ export class D3OrgChartComponent {
       .data(this.data)
 
       //Altura da caixa
-      .nodeHeight((d) => 200)
+      .nodeHeight((d) => 250)
 
       //Largura da caixa
       .nodeWidth((d) => {
@@ -156,7 +156,6 @@ export class D3OrgChartComponent {
           
         
 `;
-
         const cardchart = `
         <div style="padding-top:30px;background-color:none;margin-left:1px;height:${
           d.height
@@ -205,7 +204,7 @@ export class D3OrgChartComponent {
           >              
             <div style="
                 font-family: 'Inter', sans-serif;
-                background-color:${color};
+                background: rgba(51,51,51);
                 margin-left:-1px;width:${d.width - 2}px;
                 height:${d.height - imageDiffVert}px;
                 border-radius:10px;
@@ -218,27 +217,47 @@ export class D3OrgChartComponent {
           d.width / 2 - 30
         }px;border-radius:100px;width:60px;height:60px;" />
 
-            <div style="text-align:center">
-               <div style="color:#111672;font-size:16px;font-weight:bold"> ${
-                 d.data.pessoa.nome_guerra
-               } </div>
-               <div style="color:#404040;font-size:16px;margin-top:4px"> ${
-                 d.data.perfil_funcionario.positionName
-               } </div>
+        
+
+            <div style="text-align:center; margin-bottom:10px">
+              <div style="color:#ffe600;font-size:16px;font-weight:bold"> 
+                ${d.data.pessoa.nome_guerra}
+              </div>
+
+              <div>
+                <span style="color: #ffffff">${d.data.pessoa.email}</span>
+                <div style="font-size:16px;margin-top:4px">
+                <div style="color: black">
+                  <span style="background: #eae2fd; border-radius: .8rem; padding: .2rem .4rem; line-height: 130%">${
+                    d.data.perfil_funcionario.positionName
+                  }</span>
+                </div>
+                  
+                </div>
+              </div>
            </div> 
 
               
             <div style="display:flex;padding-left:15px;padding-right:15px;">
-            <div style="background-color: #8B8C89">
-                <div style="text-align:center"><strong>Perfil do Colaborador</strong></div>
-                <div>Função: ${d.data.perfil_funcionario.nome_perfil} #${
-          d.data.perfil_funcionario.codigo_perfil
-        }</div>
-                <div>Descrição:${d.data.perfil_funcionario.descricao}</div>
-                <div>Área: ${d.data.perfil_funcionario.area}</div>
-                <div>Escritório de referência: ${
-                  d.data.perfil_funcionario.office
-                }</div>
+
+                <div style="background: #FFFFFF;
+                            box-sizing: .0rem .4rem 1.6rem #eae2fd;
+                            border-radius: 0.3rem;
+                            line-height: 130%;">
+                    <div style="text-align:center"><strong>Perfil do Colaborador</strong></div>
+
+                    <div>
+                      Função: ${d.data.perfil_funcionario.nome_perfil} 
+                      #${d.data.perfil_funcionario.codigo_perfil}
+                    </div>
+
+                    <div>Descrição:${d.data.perfil_funcionario.descricao}</div>
+                    <div>Área: ${d.data.perfil_funcionario.area}</div>
+                    <div>
+                      Escritório de referência: ${
+                        d.data.perfil_funcionario.office
+                      }
+                    </div>
             </div>
         </div>
 
