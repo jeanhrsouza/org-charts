@@ -31,6 +31,39 @@ export class D3OrgChartComponent {
     this.updateChart();
     console.log(this.data);
   }
+
+  filterChart(e) {
+    console.log(e);
+    // Get input value
+    const value = e.srcElement.value;
+
+    // Clear previous higlighting
+    this.chart.clearHighlighting();
+
+    // Get chart nodes
+    const data = this.chart.data();
+
+    // Mark all previously expanded nodes for collapse
+    data.forEach((d) => (d._expanded = false));
+
+    // Loop over data and check if input value matches any name
+    data.forEach((d) => {
+      if (
+        value != '' &&
+        d.pessoa.nome_guerra.toLowerCase().includes(value.toLowerCase())
+      ) {
+        // If matches, mark node as highlighted
+        d._highlighted = true;
+        d._expanded = true;
+      }
+    });
+
+    // Update data and rerender graph
+    this.chart.data(data).render().fit();
+
+    console.log('filtering chart', e.srcElement.value);
+  }
+
   updateChart() {
     if (!this.data) {
       return;
