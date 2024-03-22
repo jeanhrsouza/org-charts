@@ -3,6 +3,19 @@
   width: 100%;
 }
 
-.input {
-  margin-top: 10px;
+.search-bar {
+  border: 2px solid red;
+  display: flex;
+  width: 30%;
+
+  &__input {
+    flex-grow: 1;
+    font-size: 1.5rem;
+    border: 0;
+    background: transparent;
+
+    &:focus {
+      outline: 0;
+    }
+  }
 }

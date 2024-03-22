@@ -1,2 +1,7 @@
-<input class="input" type="search" placeholder="search by name" (input)="filterChart($event)" />
+<div class="search-bar">
+    <input class="search-bar__input" type="search" placeholder="search by name" aria-label="search"
+        (input)="filterChart($event)" />
+
+</div>
+
 <div #chartContainer id="chartContainer" class="chart-container"></div>
